@@ -208,6 +208,26 @@ body .container {
 
   }
 
+ .thankyouButton  {
+    font-family: 'Play', sans-serif;
+    background: #d9f9dc;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 8px 0px;
+    width: 88%;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 15px;
+    right: 30;
+    left: 30
+ 
+  }
+
+
   .list li {
     font-family: 'Play', sans-serif;
     text-align:left;
