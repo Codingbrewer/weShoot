@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+
+body {
+  background-image: url('../images/Background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+body .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px 0;
+    padding-top: 0px;
+    height: 100%;
+    padding-left: 10%;
+   
+  }
+
+
+  body .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px 0;
+    padding-top: 0px;
+    height: 100%;
+    padding-left: 10%;
+   
+  }
+  
+  body .container .card {
+    position: relative;
+    text-decoration: none;
+    background-color: white;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 40px;
+    transition: 0.5s;
+  }
+    
+  body .container .card:nth-child(1) .box .content button {
+    background: #d9f9dc;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  body .container .card:nth-child(2) .box .content button {
+    background: #d9f9dc;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  body .container .card:nth-child(3) .box .content button {
+    background: #d9f9dc;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  body .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  /* body .container .card .box:hover {
+    transform: translateY(-50px);
+  } */
+  
+  body .container .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  body .container .card .box .content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  body .container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .container .card .box .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 100;
+    z-index: 1;
+    margin-bottom: 5px;
+    font-family: 'Squada One', cursive;
+  }
+  
+  .container .card .box .content h4 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.2rem;
+    color: #d9f9dc;
+    z-index: 1;
+    margin: 0%;
+  }
+
+  .container .card .box .content p {
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  body .container .card .box .content button {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  body .container .card .box .content button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+  }
+
+  .icons {
+    filter: invert(92%) sepia(74%) saturate(144%) hue-rotate(53deg) brightness(100%) contrast(96%);
+    width: 50%;
+  }
+
+  .logo {
+    width: 300px;
+    filter: invert(92%) sepia(74%) saturate(144%) hue-rotate(53deg) brightness(100%) contrast(96%) 
+  }
+
+  .cardHover {
+    position: absolute;
+    z-index: 9;
+    min-width: 320px;
+    height: 440px;
+    border-radius: 15px;
+    transition: 5s;
+    animation: popup 0.8s linear;
+  }
+
+  .cardHover .icons {
+    width: 30%;
+  }
+
+  @keyframes popup {
+    from {height: 0%;
+      bottom: 0%;
+    }
+    to{height:  100%;
+      bottom: 0%;
+    }
+    
+  }
+
+  .best {
+    background-color: #a9cdff;
+    width: 50%;
+    margin-left:25%;
+    right: 30%;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    text-decoration: none;
+    height: 40px;
+    z-index: 9;
+    font-family: 'Play', sans-serif;
+    font-size: 1.1rem;
+
+  }
+
+  .list li {
+    font-family: 'Play', sans-serif;
+    text-align:left;
+    list-style: inside;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    width: 250px;
+    padding-right: 30px;
+    }
+  
+    
+    @media ( max-width: 1150px) {
+      
+
+      body { 
+
+        background-image: none;
+        background-color: #2a2b2f;
+               
+      }
+
+      .swiperslide {
+        background-image: block;
+      }
+      
+      body .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0px 0;
+        padding-top: 0px;
+        height: 100%;
+        padding-left: 0%;
+       
+      }
+
+
+      body .container .card {
+        position: relative;
+        background-color: white;
+        min-width: 320px;
+        height: 440px;
+        text-decoration: none;
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+          5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        margin: 40px;
+        transition: 0.5s;
+      }
+
+
+      .container .card .box .content h3 {
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 100;
+        padding: 10px;
+        z-index: 1;
+        margin-bottom: 5px;
+        font-family: 'Squada One', cursive;
+      }
+      
+      .container .card .box .content h4 {
+        font-family: 'Teko', sans-serif;
+        font-size: 2rem;
+        color: #d9f9dc;
+        z-index: 1;
+        margin: 0%;
+      }
+    
+      .container .card .box .content p {
+        font-family: 'Play', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 200;
+        margin: 3px;
+        padding: 20px;
+        color: rgba(255, 255, 255, 0.9);
+        z-index: 1;
+        transition: 0.5s;
+
+    }
+
+.logo {
+  width: 200px;
+}
+
+  }
+
+        
+  @media ( max-width: 350px) {
+
+  
+    body .container .card {
+      position: relative;
+      background-color: white;
+      min-width: 270px;
+      height: 450px;
+      text-decoration: none;
+      box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      margin: 35px;
+      padding: 0px;
+      transition: 0.5s;
+    }
+
+
+  }

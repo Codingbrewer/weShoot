@@ -1,0 +1,207 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px 0;
+    padding-top: 0px;
+    height: 100%;
+    padding-left: 0%;
+   
+  }
+  
+.formContainer .card {
+    position: relative;
+    background-color: white;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 40px;
+    transition: 0.5s;
+  }
+    
+.formContainer.card:nth-child(1) .box .content button {
+    background: #d9f9dc;
+    color: #000;
+    cursor: pointer;
+  }
+  
+.formContainer .card:nth-child(2) .box .content button {
+    background: #d9f9dc;
+    color: #000;
+    cursor: pointer;
+  }
+  
+.formContainer .card:nth-child(3) .box .content button {
+    background: #d9f9dc;
+    color: #000;
+    cursor: pointer;
+  }
+  
+.formContainer .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .formContainer .card .box .content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .formContainer.card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .formContainer .card .box .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 100;
+    z-index: 1;
+    margin-bottom: 5px;
+    font-family: 'Squada One', cursive;
+  }
+  
+  .formContainer .card .box .content h4 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.2rem;
+    color: #d9f9dc;
+    z-index: 1;
+    margin: 0%;
+  }
+
+  .formContainer .card .box .content p {
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  .formContainer.card .box .content button {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  .formContainer .card .box .content button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+  }
+
+  
+  .orderForm {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    align-items: left;
+    text-align: left;
+
+  }
+
+  .orderForm span  {
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+    padding-right: 10%;
+    
+  }
+
+
+  .orderForm input  {
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    color:black;
+    z-index: 10000 !important;
+    padding-right: 20%;
+    margin-bottom: 3%;
+    cursor:text
+
+    
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+
+.formButton  {
+    font-family: 'Play', sans-serif;
+    background: #d9f9dc;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 8px 0px;
+    width: 88%;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 15px;
+    right: 30;
+    left: 30
+ 
+  }
+
+  @media ( max-width: 350px) {
+
+   
+    .formContainer .card {
+      position: relative;
+      background-color: white;
+      min-width: 270px;
+      height: 450px;
+      text-decoration: none;
+      box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      margin: 35px;
+      padding: 0px;
+      transition: 0.5s;
+    }
+
+    .orderForm input  {
+        font-family: 'Play', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 100;
+        color:black;
+        z-index: 10000 !important;
+        padding-right: 20%;
+        margin-bottom: 3%;
+        cursor:text
+    
+        
+      }
+
+
+  }

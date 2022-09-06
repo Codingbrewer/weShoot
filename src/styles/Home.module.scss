@@ -1,0 +1,24 @@
+.container {
+    .homeSwiper{
+
+        width: 100%;
+        height: 100vh;
+        max-height: 628px;
+        .swiperslide {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+    
+            }
+            
+        }
+
+        .homeBanner {
+            position: absolute;
+            
+          }
+        
+    }
+}
+
