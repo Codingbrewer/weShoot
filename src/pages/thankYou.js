@@ -17,7 +17,7 @@ export default function thankYou() {
         <h4>Thank you for your Order!</h4>
         <p>Next step: you will get a shipping label to your Email</p>
         <p>We are super exited to start shooting your awsome products!</p>
-        <Link className={styles.formButton}  to='/'>Back to homepage</Link>
+        <Link className={styles.thankyouButton}  to='/'>Back to homepage</Link>
         <p>question to your order? Email us now! </p>
         <a href="mailto:info@weshoot.com" target="_blank" rel="noreferrer">
         <img className={styles.icons} src={Email}  style={{width:'30px', height: '30px'}} alt=""/></a>
