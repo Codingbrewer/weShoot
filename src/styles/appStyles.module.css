@@ -305,7 +305,7 @@ body .container {
         font-size: 0.9rem;
         font-weight: 200;
         margin: 3px;
-        padding: 20px;
+        padding: 10px;
         color: rgba(255, 255, 255, 0.9);
         z-index: 1;
         transition: 0.5s;
@@ -320,6 +320,14 @@ body .container {
 
         
   @media ( max-width: 350px) {
+    
+      .firstPara {
+      display: none;
+    }
+    .secondPara {
+      display: none;
+    }
+
 
   
     body .container .card {
