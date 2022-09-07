@@ -15,8 +15,8 @@ export default function thankYou() {
       <div className={styles.content} style={{padding:'30px'}}>
       <img className={styles.icons} src={ThankYouIcon}  style={{width:'100px', height: '100px'}} alt=""/>
         <h4>Thank you for your Order!</h4>
-        <p>Next step: you will get a shipping label to your Email</p>
-        <p>We are super exited to start shooting your awsome products!</p>
+        <p className={styles.firstPara} >Next step: you will get a shipping label to your Email</p>
+        <p className={styles.secondPara}>We are super exited to start shooting your awsome products!</p>
         <Link className={styles.thankyouButton}  to='/'>Back to homepage</Link>
         <p>question to your order? Email us now! </p>
         <a href="mailto:info@weshoot.com" target="_blank" rel="noreferrer">
