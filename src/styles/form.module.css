@@ -1,13 +1,11 @@
 .formContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 50px 0;
-    padding-top: 0px;
-    height: 100%;
-    padding-left: 8%;
+ align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 0;
    
   }
   
