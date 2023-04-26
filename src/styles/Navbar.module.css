@@ -144,9 +144,10 @@
   } 
 
 
-  .navbar nav ul {
-    height: 35%;
-  
+ .navbar nav ul {
+    height: 22%;
+    padding-top: 20px;
+  width: 30%;
  
   
   }
