@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './Components/Navbar';
+import React, { useEffect } from 'react';
 
 // pages & components
 import Home from './pages/home'
@@ -13,6 +14,11 @@ import ThankYou from './pages/thankYou'
 import Footer from './Components/Footer';
 
 function App() {
+  
+    useEffect(() => {
+    document.title = "WeShoot - Photography";
+  }, []);
+  
   return (
     <div className="App">
       <BrowserRouter>
